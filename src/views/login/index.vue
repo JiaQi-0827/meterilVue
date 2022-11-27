@@ -112,18 +112,18 @@ export default {
       otherQuery: {}
     }
   },
-  watch: {
-    $route: {
-      handler: function(route) {
-        const query = route.query
-        if (query) {
-          this.redirect = query.redirect
-          this.otherQuery = this.getOtherQuery(query)
-        }
-      },
-      immediate: true
-    }
-  },
+  // watch: {
+  //   $route: {
+  //     handler: function(route) {
+  //       const query = route.query
+  //       if (query) {
+  //         this.redirect = query.redirect
+  //         this.otherQuery = this.getOtherQuery(query)
+  //       }
+  //     },
+  //     immediate: true
+  //   }
+  // },
   created() {
     // window.addEventListener('storage', this.afterQRScan)
   },
@@ -224,7 +224,7 @@ $cursor: #fff;
     input {
       background: transparent;
       border: 0px;
-      -webkit-appearance: none;
+      // -webkit-appearance: none;
       border-radius: 0px;
       padding: 12px 5px 12px 15px;
       color: $light_gray;
